@@ -1,0 +1,23 @@
+{
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextSrcId": 1,
+  "diagnostic.virtualTextPrefix": " ■ ",
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextOffset": 1,
+  "diagnostic": {
+    "enableSign": true,
+    "signOffset": 999999,
+    "errorSign": "E",
+    "warningSign": "W",
+    "infoSign": "I",
+    "hintSign": "H"
+  },
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"]
+    }
+  },
+  "snippets.ultisnips.pythonPrompt": false
+}
