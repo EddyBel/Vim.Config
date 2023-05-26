@@ -19,6 +19,7 @@ Vim.Config is a configuration of Vim as an integrated development environment (I
 ## 🔨 Requirements
 
 - [Vim >= 7.0](https://github.com/vim/vim)
+- [VimPlug](https://github.com/junegunn/vim-plug)
 - [NerdFonts (Recommended source: FiraCode Nerd Font)](https://www.nerdfonts.com/)
 - [NodeJS](https://nodejs.org/en/)
 - [Python](https://www.python.org/)
