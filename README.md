@@ -31,6 +31,52 @@ Vim.Config is a configuration of Vim as an integrated development environment (I
 - [x] Convenient and easy keyboard shortcuts
 - [x] Pleasant interface design
 
+## How to install
+
+### Step by step installation
+
+1. Once you have the requirements correctly installed you can install the vim configuration with the following commands.
+
+2. The first thing is to clone the `coc-settings.json` configuration, this configuration handles the syntax parser, then you can clone the configuration hosted in the same .vimrc file.
+
+   _Linux_
+
+   ```bash
+   curl -fLo ~/.vim/coc-settings.json --create-dirs \
+       https://raw.githubusercontent.com/EddyBel/Vim.Config/master/coc-settings.json
+   ```
+
+   ```bash
+   curl -fLo ~/.vimrc --create-dirs \
+       https://raw.githubusercontent.com/EddyBel/Vim.Config/master/.vimrc
+   ```
+
+   _Windows_
+
+   ```sh
+   iwr -useb https://raw.githubusercontent.com/EddyBel/Vim.Config/master/coc-settings.json |`
+       ni $HOME/vimfiles/coc-settings.json -Force
+   ```
+
+   ```sh
+   iwr -useb https://raw.githubusercontent.com/EddyBel/Vim.Config/master/.vimrc |`
+       ni $HOME/.vimrc -Force
+   ```
+
+3. To finish you must open the vim editor in the `.vimrc` file and execute the command `:PlugInstall` this will install all the plugins listed in the configuration.
+
+   _Windows_
+
+   ```sh
+   vim $HOME/.vimrc
+   ```
+
+   _Linux_
+
+   ```bash
+   vim ~/.vimrc
+   ```
+
 ## 🎢 Project status
 
 The project is constantly changing because it is my usual code editor and I will be improving and adding things as I see fit.

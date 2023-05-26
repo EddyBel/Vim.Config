@@ -72,9 +72,9 @@ nnoremap <leader>mp <cmd>:MarkdownPreviewToggle<CR>
 "This section validates if vimplug is installed on the system if it is not then install it.
 
 if has('win32') 
-  let s:plugins_path = '~/vimfiles/plugins'
+  let g:plugins_path = '~/vimfiles/plugins'
 else 
-  let s:plugins_path = '~/.vim/plugins'
+  let g:plugins_path = '~/.vim/plugins'
 endif
 
 " POLYGLOT CONFIGURATION
@@ -83,11 +83,11 @@ let g:polyglot_disabled = [ 'markdown' ]
 
 " Prepare the plugins to be installed
 
-call plug#begin(glob(s:plugins_path))   "directorio donde se van a instalar los plugins
+call plug#begin(g:plugins_path)   "directorio donde se van a instalar los plugins
 
 Plug 'dracula/vim', { 'as': 'dracula' } "Theme
 Plug 'Yggdroot/indentLine'    "indentacion
-Plug 'vim-airline/vim-airline'    "diseño de la barra en la cual se muestran los modos, la linea, etc.
+Plug 'vim-airline/vim-airline'    "dise??o de la barra en la cual se muestran los modos, la linea, etc.
 Plug 'vim-airline/vim-airline-themes' "temas para el vim-airline
 Plug 'christoomey/vim-tmux-navigator' "Allows you to move between different spaces
 Plug 'preservim/vimux' "Plugin that allows multiple spaces
